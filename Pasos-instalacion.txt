@@ -2,7 +2,10 @@ filezila.
 
 pasar instaladores a una ubicación dentro del servidor linux.
 
-1.Ingresar por putty o terminal 
+1.Ingresar por putty o terminal
+	1.1 Si no se han pasado los archivos por ftp hacer la descarga en el repo de Github (de acuerdo a la versión)
+	1.2 https://github.com/todlion93/instaladoressnow/blob/main/snowagentdeb-x64.deb 
+	1.3 https://github.com/todlion93/instaladoressnow/blob/main/snowagentrpmCent-x64.rpm 
 2.Ejecutar o actualizar paquetes instaladores rpm
 	2.1 yum install rpm
 4.Ubicar el fichero instalador

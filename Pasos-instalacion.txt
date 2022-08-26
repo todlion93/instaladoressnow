@@ -1,0 +1,22 @@
+filezila.
+
+pasar instaladores a una ubicación dentro del servidor linux.
+
+1.Ingresar por putty o terminal 
+2.Ejecutar o actualizar paquetes instaladores rpm
+	2.1 yum install rpm
+4.Ubicar el fichero instalador
+5.Asignar permisos 777 
+3.Ejecutar instalador - yum localinstall "package.rpm" o
+sudo rpm -i "nombrepaquete.rpm"
+4.Agregar programación de reporte al cron
+	4.1 cd /opt/snow  <---ruta instalación 
+	4.2 editar archivo "snowcron.conf"   (nano o vi)
+	4.3 definir programación * * * * *
+5.Agregar archivo al cron de linux
+    5.1	./snowcron -f /opt/snow/snowcron.conf /opt/snow/snowagent
+6. Verificar que haya quedado la tarea 
+	6.1 crontab -e
+7. Salir. :quit(vi)
+8. Ejecutar forzar agente ./snowagent 
+9. Forzado de envio ./snowagent send
